@@ -1,0 +1,13 @@
+<div class="card">
+    <h1>Ejemplo de directiva [ngStyle]</h1>
+    <p>Introduzca la puntuación</p>
+    <input type="number" [(ngModel)]="puntuacion">
+    <!-- ngStyle recibe un objeto con la sintaxis 
+        [ngStyle]="{propiedadCSS: expresión, propiedadCSS: expresion, ...}"
+    -->
+    <p *ngIf="puntuacion && puntuacion >=0 && puntuacion <=10; else aviso"
+        [ngStyle]="{'color': getColor()}">La puntuacion obtenida es {{puntuacion}}</p>
+    <ng-template #aviso>
+        <p *ngIf="puntuacion">Introduzca un valor entre 0 y 10</p>
+    </ng-template>
+</div>

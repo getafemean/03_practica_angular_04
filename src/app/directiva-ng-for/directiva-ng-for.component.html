@@ -1,0 +1,18 @@
+<div class="card">
+    <h1>Ejemplo de directiva *ngFor</h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nombre proveedor</th>
+            <th>CIF</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let proveedor of proveedores; let i = index; let j = even; let k = odd">
+            <td>{{i + 1}}</td>
+            <td>{{proveedor.getNombre()}}</td>
+            <td>{{proveedor.getCif()}}</td>
+            <td *ngIf="j">Par</td>
+            <td *ngIf="k">Impar</td>
+        </tr>
+    </table>
+</div>

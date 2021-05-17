@@ -5,12 +5,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DirectivaNgIfComponent } from './directiva-ng-if/directiva-ng-if.component';
 import { DirectivaNgForComponent } from './directiva-ng-for/directiva-ng-for.component';
+import { DirectivaNgSwitchComponent } from './directiva-ng-switch/directiva-ng-switch.component';
+import { DirectivaNgClassComponent } from './directiva-ng-class/directiva-ng-class.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectivaNgIfComponent,
-    DirectivaNgForComponent
+    DirectivaNgForComponent,
+    DirectivaNgSwitchComponent,
+    DirectivaNgClassComponent
   ],
   imports: [
     BrowserModule,

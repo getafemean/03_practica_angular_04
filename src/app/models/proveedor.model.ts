@@ -1,6 +1,6 @@
 export class Proveedor {
-    private nombre: string;
-    private cif: string; 
+    nombre: string;
+    cif: string; 
     //...
     constructor(nombre: string, cif: string) {
         this.nombre = nombre;
